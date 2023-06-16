@@ -1,11 +1,11 @@
-About r-kedd
-============
+About r-kedd-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kedd-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=kedd
 
 Package license: GPL (>= 2)
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kedd-feedstock/blob/main/LICENSE.txt)
 
 Summary: Smoothing techniques and computing bandwidth selectors of the nth derivative of a probability density for one-dimensional data.
 
