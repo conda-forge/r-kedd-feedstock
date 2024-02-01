@@ -1,4 +1,4 @@
-{% set version = '1.0.3' %}
+{% set version = "1.0.4" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/kedd_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/kedd/kedd_{{ version }}.tar.gz
-  sha256: 38760abd8c8e8f69ad85ca7992803060acc44ce68358de1763bd2415fdf83c9f
+  sha256: bb944389a61cff22bb3bdde938a0ff6c16700a1ca725ef36b391b97812c45b26
 
 build:
   noarch: generic
-  number: 1006
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,8 +36,7 @@ test:
 about:
   home: https://CRAN.R-project.org/package=kedd
   license: GPL (>= 2)
-  summary: Smoothing techniques and computing bandwidth selectors of the nth derivative of a
-    probability density for one-dimensional data.
+  summary: Smoothing techniques and computing bandwidth selectors of the nth derivative of a probability density for one-dimensional data.
   license_family: GPL3
   license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
   license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
