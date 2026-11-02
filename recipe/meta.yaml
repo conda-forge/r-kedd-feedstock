@@ -1,4 +1,4 @@
-{% set version = "1.0.4" %}
+{% set version = "2.0.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/kedd_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/kedd/kedd_{{ version }}.tar.gz
-  sha256: bb944389a61cff22bb3bdde938a0ff6c16700a1ca725ef36b391b97812c45b26
+  sha256: e8396cd0f155629d11970c559872360230fffb40485765d13548c87532018b03
 
 build:
   noarch: generic
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
